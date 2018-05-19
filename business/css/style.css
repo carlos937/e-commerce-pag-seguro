@@ -1,0 +1,274 @@
+/* 
+Autor : junior
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body,html {
+    line-height: 1;
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.abas-pdv{
+    border:none;
+    padding: 0;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+}
+.ui-tabs .ui-tabs-panel{
+    padding: 0;
+}
+.fundo{
+    position: relative;
+    background: #fff;
+    margin:0.25% auto 0;
+    width: 99.5%;
+    min-height: 99.5%;     
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    padding: 0;
+    padding-bottom: 50px;
+}
+.rodape{
+    background: #ddd;
+    text-align: right;
+    width: 100%;
+    color: red;
+    padding: 2px 5%;
+    max-height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*botoes*/
+.circulo{
+    border-radius: 50%;
+    border: 2px #fff solid;
+}
+
+
+/*--*/
+
+.cadastroADM{
+    margin-top: 10%;
+    border: 1px solid #000;
+    padding: 30px;
+
+}
+#deslogar{
+    float: right;
+    background: #ff0000;
+    color: #fff;
+    margin-right: 2%;
+    border: 0;
+    width: 7.5%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#deslogar a{
+    width: 100%;
+    color: #fff;
+
+}
+.notificacoes{
+    padding: 0;
+}
+.notificacoes-sub{
+    border-right: 2px #ccc solid;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.notificacoes-sub h1{
+    border: 1px #ccc solid;
+    padding: 10px 0;
+    text-align: center;    
+}
+.notificacoes-sub h2{
+    padding: 5px 0;
+}
+.notificacoes-sub input:checked {
+    height: 20px;
+    width: 20px;
+}
+.notificacoes-sub .correiosNao:checked + div{
+    display: none;
+}
+
+.ui-accordion .ui-accordion-content{
+    padding: 10px 2%;;
+}
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #F4F4F4;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+#menu{
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 20px;
+    width: 30%;
+    border: #ccc;
+}
+.labelEditar{
+    color: green;
+    cursor: pointer;
+}
+#editarRastreamentoCheck{
+    /*display: none;*/
+}
+.editarRastreamento{
+    display: none;
+}
+.accordionDiv{
+    display:none    
+}
+.headerAcordion{
+    background: #ccc;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.obsIn{
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.tituloIn{
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/*ligth box*/
+.fundolb{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);    
+    z-index: 100;
+}
+.lb{
+    position: absolute;
+    background: #fff;
+    border: 1px #222;
+    z-index: 101;
+    padding: 30px 2.5%
+}
+.fecharLb{
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    right: -30px;
+    top: 5px;
+    font: Arial;
+    cursor: pointer;
+}
+
+#lbImprimir{
+    width: 70%;
+    top:150px;
+    right: 50%;
+    margin-right: -35%
+}
+#cadastrarProduto{
+    width: 70%;
+    top:100px;
+    right: 50%;
+    margin-right: -35%
+}
+#fotosProd{
+    width: 70%;
+    top:100px;
+    right: 50%;
+    margin-right: -35%
+}
+/*ligth box menor*/
+/*#dialogLogin{
+    width: 30%;
+    top:150px;
+    right: 50%;
+    margin-right: -15%
+}*/
+/*fim ligth box*/ 
+
+
+
+@media print {
+    *{
+        padding: 0;
+    }
+    .hideIn{
+        display:none;
+    }     
+    .fundo{
+        border: 0; 
+        min-height: 0;
+    }
+    /*    .hideBorderIn{
+            border: 0;
+        }*/
+    #pEs tr,th,td{
+        border: 0;
+    }
+    .espacoIn{
+        height: 20px;
+    }
+    .obsIn{
+        display: block;
+    }
+    .tituloIn{
+        display: block;
+    }
+
+} 

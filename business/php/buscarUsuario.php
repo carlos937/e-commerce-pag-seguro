@@ -1,0 +1,1 @@
+<?phprequire_once 'connect.php';header('Content-Type:' . "application/json");$postdata = file_get_contents("php://input");$id = json_decode($postdata);$ArrayGeral = array();$sql = "SELECT * FROM usuario where id=$id";$query = $conexao->query($sql);while ($dados = $query->fetch_assoc()) {$ArrayGeral[] = $dados;}echo json_encode($ArrayGeral, JSON_PRETTY_PRINT);

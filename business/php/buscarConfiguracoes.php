@@ -1,0 +1,1 @@
+<?phprequire_once 'connect.php';$configuracoes = array();$sql = "SELECT * FROM configuracoes ";$query = $conexao->query($sql);while ($dados = $query->fetch_assoc()) {    $configuracoes[] = $dados;}echo json_encode($configuracoes, JSON_PRETTY_PRINT);

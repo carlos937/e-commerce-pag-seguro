@@ -1,0 +1,436 @@
+/* 
+Autor : junior
+*/
+/*----------  reset ----------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background: #ddd;
+    background-size: 100% 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+/*---------- fim reset ----------*/
+
+/*tipos de fontes*/
+h1{
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+    padding: 20px 0;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    padding: 10px 0;
+}
+h3{
+    font-size: 27px;
+    font-family: 'Indie Flower', cursive;
+    padding: 5px 0;
+}
+p{
+    font-size: 18px;
+    font-family: 'Indie Flower', cursive;
+    padding:  10px 0;
+}
+label{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    padding: 15px 0;
+    width: 100%;
+}
+/*fim tipos de fontes*/
+
+/*botoes*/
+.btn{
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    border-radius: 0;
+    font-weight: bold;
+
+}
+.btn-danger{
+    background: #cc0000;
+    opacity: 0.9;
+
+}
+.btn-cinza{
+    background: #666;
+    color: #fff;
+}
+
+
+/*fim botoes*/
+
+
+/*---------- menu cabeçalho ----------*/
+#mensagemTop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #cc0000;
+    opacity: 0.9;
+    border:0;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+.navbar{
+    border-radius: 0;
+    position: fixed;
+    top: 35px;
+    width: 100%;
+    z-index: 100;
+    background: #666   ; 
+    border:0;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;    
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/*---------- fim menu cabeçalho ----------*/
+/*---------- banner ----------*/
+
+.banner{
+    width: 100%;
+    background: #ccc;
+    min-height: 250px;
+    padding-top: 100px; 
+    color:#cc0000;
+    text-align: center;
+}
+.banner p img{
+    width: 40px;
+    height:40px;
+    margin-bottom: -25px;
+}
+.banner p{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+ #carousel {
+        width:100%;
+        height:250px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+       max-width: 300px       
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+/*---------- fim banner ----------*/
+/*---------- Filtro ----------*/
+/*barra lateral*/ 
+
+#menu h3{
+    background: #666;
+    border: 0;
+    color: #fff;
+}
+#menu label{
+    width: 100%;
+    padding: 5px 5px;
+    border: 0.5px #aaa solid;
+    background: #ccc;
+    line-height: 30px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+
+}
+#menu label:hover{
+
+    background: #666;
+    color: #fff;
+
+}
+#menu input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.barra-lateral{
+    padding: 30px 2%;
+}
+.filtro{
+    margin-bottom: 100px;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+/*fim barra lateral*/ 
+
+/*produtos*/
+.produtos{
+    padding: 30px 2%;
+    /*border-radius: 0px 10px  10px 0px;*/
+}
+
+.produto{
+    margin: 10px 0;
+    background: #ccc;
+    border: 0.5px #aaa solid;
+    padding: 20px;
+}
+
+
+/*fim produtos*/
+
+
+/*---------- fim Filtro ----------*/
+
+/*---------- contato ----------*/
+.contato {
+    padding: 50px 0;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+.contato iframe{
+    width: 100%;
+    height: 200px;
+}
+/*---------- fim contato ----------*/
+/*----------rodape ----------*/
+.rodape{
+    text-align: center;
+    color: #fff;
+    background: #666;
+    padding: 10px 0;
+}
+/*---------- fim rodape ----------*/
+/*---------- single ----------*/
+.single{
+    padding: 20px 0;
+
+}
+.single h3{
+    width: auto;
+    padding: 20px 2%;
+    float: left;
+    background: #eee;
+    margin-right: 1%;
+    margin-bottom: 5px;
+}
+.single h3 span{
+    color:#cc0000;
+}
+.single button{
+    margin: 10px 0;
+}
+.fotosSingle{
+    padding: 0;
+    padding-right:1%;
+    padding-bottom: 5px;
+}
+.moldura{
+    background: #eee;
+    width: 100%;
+    padding: 5px;
+}
+/*---------- fim single ----------*/
+
+
+
+
+/*ligth box*/
+.fundolb{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);    
+    z-index: 101;
+}
+.lb{
+    position: absolute;
+    background: #fff;
+    border: 1px #222;
+    z-index: 102;
+    padding: 20px 2.5%;
+    font-family: 'Tajawal', sans-serif;   
+}
+/*fontes lb*/
+.lb h1{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 25px;
+}
+.lb h2{
+    font-family: 'Tajawal', sans-serif;   
+    font-size: 20px;
+}
+.lb h3{
+    font-family: 'Tajawal', sans-serif; 
+    font-size: 17px;
+}
+.lb label{
+    font-family: 'Tajawal', sans-serif;  
+    font-size: 17px;
+    padding:  5px 0;
+}
+/*fim fontes lb*/
+.lb p{
+    font-size: 16px;
+    font-family: 'Tajawal', sans-serif;   
+}
+/*fim fontes lb*/
+
+.fecharLb{
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    right: -30px;
+    top: 5px;
+    font: Arial;
+    cursor: pointer;
+}
+#dialogLogin{
+    width: 30%;
+    top:150px;
+    right: 50%;
+    margin-right: -15%
+}
+#dialogCadastre-se{
+    width: 70%;
+    top:150px;
+    right: 50%;
+    margin-right: -35%
+}
+#dialogCarrinho{
+    width: 70%;
+    top:150px;
+    right: 50%;
+    margin-right: -35%
+}
+#areaDoUsuario{
+    width: 70%;
+    top:150px;
+    right: 50%;
+    margin-right: -35%
+}
+/*fim ligth box*/ 
+
+/*login*/
+#entrar{
+    margin: 10px 0;
+    padding: 15px 30px;
+}
+/*fim login*/
+/*area do usuario*/
+#dadosDeReferencias{
+    background: #ccc;
+}   
+#dadosDeReferencias h1{
+    padding: 10px 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background: #007fff;
+    color: #fff;
+    text-align: center;
+}
+.accordionDiv{
+    display:none ; 
+    padding: 20px 2%;
+    background: #fff;
+}
+#dadosDeReferencias h3{
+    width: auto;
+    padding: 20px 2%;
+    float: left;
+    background: #eee;
+    margin-right: 1%;
+    margin-bottom: 5px;
+}
+#areaDoUsuario{
+    padding: 0;
+}
+/*fim area do usuario*/
+
+/*carrinho*/
+#dialogCarrinho h3{
+    width: auto;
+    padding: 20px 2%;
+    float: left;
+    background: #eee;
+    margin-right: 1%;
+    margin-bottom: 5px;
+}
+#dialogCarrinho h3 span{
+    color:#cc0000;
+}
+#calculoFrete{
+    padding: 0;
+}
+#calculoFrete select{
+    width: 48%;
+    margin-right:  2%;
+    margin-bottom: 20px;
+    float: left;
+}
+#calculoFrete button{
+    width: auto;
+    float: left;
+}
+.comprarPagSeguro{
+    width: 50%;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+/*fim carrinho*/
